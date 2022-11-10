@@ -22,7 +22,7 @@
 }
 
 tbody > *:nth-child(2) img {
-  width: 80px;
+  width: min(100px, 100%);
   display: flex;
   margin: auto;
 }
@@ -35,7 +35,7 @@ tbody > *:nth-child(3) p {
 }
 
 tbody > *:nth-child(3) img {
-  width: 30px;
+  width: min(30px, 30%);
 }
 
 .dash-cell-value > * {
