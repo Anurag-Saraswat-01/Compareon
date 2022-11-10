@@ -76,6 +76,15 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .footer {
   color: white;
   background: var(--secondary);
