@@ -1,0 +1,98 @@
+.compare {
+  width: 100%;
+  position: relative;
+  margin-top: 7rem;
+}
+
+.compare__content {
+  background: var(--primary);
+  border-radius: 0.5rem;
+}
+
+.compare__dropdown_wrapper {
+  display: flex;
+  margin: 0 auto 1rem;
+  width: 80%;
+  max-width: 720px;
+  color: black !important;
+}
+
+#dropdown {
+  width: 100%;
+}
+
+tbody > *:nth-child(2) img {
+  width: 80px;
+  display: flex;
+  margin: auto;
+}
+
+tbody > *:nth-child(3) p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+tbody > *:nth-child(3) img {
+  width: 30px;
+}
+
+.dash-cell-value > * {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text);
+}
+
+.dash-header > * > * {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+tbody:first-child > :first-child > :first-child {
+  border-radius: 0.5rem 0 0 0;
+}
+
+tbody:first-child > :first-child > :last-child {
+  border-radius: 0 0.5rem 0 0;
+}
+
+tbody tr:hover {
+  background-color: transparent !important;
+}
+
+#bst_fig .main-svg {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .compare {
+    margin-top: 3rem;
+  }
+
+  tbody > *:nth-child(2) img {
+    width: 40px;
+    /* display: flex;
+    margin: auto; */
+  }
+
+  tbody > *:nth-child(3) img {
+    width: 15px;
+  }
+
+  .dash-header > *,
+  .dash-cell-value > * {
+    font-size: 12px;
+  }
+
+  .dash-header:first-child,
+  .dash-cell:first-child {
+    width: 60px !important;
+  }
+}

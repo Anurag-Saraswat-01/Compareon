@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Press+Start+2P&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.light {
+  --background: #efdbb6;
+  --primary: #fcf3e4;
+  --secondary: #633c15;
+  --text: black;
+}
+
+.dark {
+  --background: #252020;
+  --secondary: #111111;
+  --primary: #171717;
+  --text: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary);
+  padding: 0.5rem 0.5rem 10rem 0.5rem;
+  position: absolute;
+  width: 100%;
+}
+
+.navbar__title {
+  color: white;
+  font-size: 20px;
+  font-family: "Press Start 2P", cursive;
+}
+
+/* .navbar__switch {
+  display: none;
+} */
+
+.navbar__switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 1rem; */
+}
+
+.navbar__switch_img {
+  height: 20px;
+}
+
+.daq-booleanswitch--light__background {
+  height: 20px;
+}
+
+.daq-booleanswitch--light__button {
+  height: 15.5px;
+  width: 15.5px;
+  background: #441d15;
+}
+
+.navbar__logo {
+  height: 40px;
+}
+
+.container {
+  padding: 1rem;
+  min-height: calc(100vh - 140px);
+  display: grid;
+  place-items: center;
+  overflow: scroll;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer {
+  color: white;
+  background: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  height: 60px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 1rem 4rem 10rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar__title {
+    font-size: 32px;
+  }
+
+  .navbar__switch {
+    margin-inline: auto 4rem;
+  }
+
+  .navbar__switch_img {
+    height: 32px;
+  }
+
+  .daq-booleanswitch--light__background {
+    height: 24px;
+    width: 47.25px !important;
+  }
+
+  .daq-booleanswitch--light__button {
+    height: 19.5px !important;
+    width: 19.5px !important;
+  }
+
+  .navbar__logo {
+    height: 80px;
+  }
+
+  .navbar__title {
+    margin-inline: 4rem auto;
+  }
+
+  .container {
+    min-height: calc(100vh - 60px);
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding: 1rem 4rem;
+  }
+}
