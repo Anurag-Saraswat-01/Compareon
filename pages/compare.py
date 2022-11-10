@@ -12,7 +12,7 @@ pio.templates.default = 'custom'
 dash.register_page(__name__, path='/compare')
 
 print('\nLoading dex')
-df = pd.read_csv("pokedex_markdown.csv")
+df = pd.read_csv("data/pokedex_markdown.csv")
 print('Dex loaded')
 
 # name: value pair list for dropdown
